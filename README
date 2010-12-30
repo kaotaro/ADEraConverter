@@ -1,1 +1,5 @@
-2010/12/30 ADEraConverterはgithubで管理します変更と反映# ファイルを変更して%cd /Users/kaorin/work/ADEraConverter% git commit -a% git push origin master
+2010/12/30 ADEraConverterはgithubで管理します変更と反映
+
+# 新規でファイルを追加した場合% cd /Users/kaorin/work/ADEraConverter
+% git add README% git commit -m 'add README'% git push origin master
+# 既存ファイルの内容を変更した場合% cd /Users/kaorin/work/ADEraConverter% git commit -a% git push origin master
