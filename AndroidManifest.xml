@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="kao.android.app"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:label="@string/app_name" android:icon="@drawable/icon_v2">
+        <activity android:name=".TopActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <activity android:name=".ADEraActivity"></activity>
+
+
+<activity android:name=".HowOldActivity"></activity>
+
+<activity android:name=".InfoActivity" android:theme="@style/Theme.CustomDialog"></activity>
+<activity android:theme="@style/Theme.CustomDialog" android:name=".SettingDialogActivity"></activity>
+</application><activity android:name=".SettingDialogActivity" android:theme="@style/Theme.CustomDialog"></activity>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4"/>
+
+</manifest> 

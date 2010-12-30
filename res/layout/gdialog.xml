@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/LinearLayout00"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:gravity="center_horizontal"
+			android:weightSum="5">
+			<LinearLayout android:id="@+id/LinearLayout01"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_weight="1" android:layout_width="300dp"
+				android:layout_marginTop="20dp" android:orientation="vertical">
+				<TextView android:id="@+id/title" android:text="@string/set_title"
+					android:gravity="center" android:textStyle="bold" android:textSize="24dip"
+					android:layout_height="wrap_content" android:textColor="#708090"
+					android:typeface="sans" android:layout_width="wrap_content"></TextView>
+			<ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line"></ImageView>
+</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout02"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:gravity="center" android:layout_weight="1">
+				<RadioGroup android:orientation="horizontal" android:id="@+id/type1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content">
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/seireki"
+						android:text="@string/seireki" android:checked="true"
+						android:textColor="#708090" android:layout_marginRight="20dp"></RadioButton>
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/wareki"
+						android:text="@string/wareki" android:textColor="#708090"
+						android:layout_marginLeft="20dp"></RadioButton>
+				</RadioGroup>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout05"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:layout_weight="1">
+				<Spinner android:id="@+id/Spinner01" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:visibility="gone"></Spinner>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout03"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:gravity="center" android:layout_weight="1"
+				android:layout_marginTop="10dp">
+				<TableLayout android:id="@+id/TableLayout01"
+					android:layout_height="wrap_content" android:layout_width="wrap_content">
+					<TableRow android:id="@+id/TableRow01"
+						android:layout_height="wrap_content" android:layout_width="wrap_content">
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_gravity="center"
+							android:adjustViewBounds="true" android:padding="0px" android:id="@+id/plus_year"
+							android:src="@drawable/plus120_50" android:layout_marginLeft="2dp"></ImageButton>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/dummy1"></ImageView>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:adjustViewBounds="true"
+							android:padding="0px" android:layout_gravity="center" android:id="@+id/plus_month"
+							android:src="@drawable/plus120_50" android:layout_marginLeft="2dp"></ImageButton>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/dummy2"></ImageView>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:adjustViewBounds="true"
+							android:padding="0px" android:layout_gravity="center" android:id="@+id/plus_day"
+							android:src="@drawable/plus120_50" android:layout_marginLeft="2dp"></ImageButton>
+					</TableRow>
+					<TableRow android:id="@+id/TableRow02"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+						<EditText android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/year"
+							android:maxLength="4" android:width="70dp"
+							android:layout_marginTop="3dp" android:layout_gravity="center"
+							android:numeric="signed" android:textSize="20dip"></EditText>
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/nen"
+							android:text="@string/nen" android:textColor="#708090"
+							android:layout_gravity="center"></TextView>
+						<EditText android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:maxLength="2"
+							android:layout_marginTop="3dp" android:layout_gravity="center"
+							android:width="45dp" android:id="@+id/month" android:numeric="signed"
+							android:textSize="20dip"></EditText>
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/gatu"
+							android:text="@string/gatu" android:textColor="#708090"
+							android:layout_gravity="center"></TextView>
+						<EditText android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:maxLines="2"
+							android:id="@+id/day" android:layout_marginTop="3dp"
+							android:layout_gravity="center" android:width="45dp"
+							android:numeric="signed" android:textSize="20dip"></EditText>
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/nichi"
+							android:text="@string/nichi" android:textColor="#708090"
+							android:layout_gravity="center"></TextView>
+					</TableRow>
+					<TableRow android:id="@+id/TableRow03"
+						android:layout_height="wrap_content" android:layout_width="wrap_content">
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_gravity="center"
+							android:adjustViewBounds="true" android:padding="0px" android:id="@+id/minus_year"
+							android:src="@drawable/minus120_50" android:layout_marginLeft="2dp"></ImageButton>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/dummy4"></ImageView>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_gravity="center"
+							android:adjustViewBounds="true" android:padding="0px"
+							android:id="@+id/minus_month" android:src="@drawable/minus120_50"
+							android:layout_marginLeft="2dp"></ImageButton>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/dummy5"></ImageView>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_gravity="center"
+							android:adjustViewBounds="true" android:padding="0px" android:id="@+id/minus_day"
+							android:src="@drawable/minus120_50" android:layout_marginLeft="2dp"></ImageButton>
+					</TableRow>
+				</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout04"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:gravity="center" android:layout_weight="1"
+				android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+				<Button android:text="@string/set" android:id="@+id/set"
+					android:layout_height="wrap_content" android:layout_width="180dp"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

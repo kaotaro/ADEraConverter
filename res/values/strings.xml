@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">ADEraConverter</string>
+
+
+
+<string name="nonInput">設定値が未入力です</string>
+
+<string name="button1">変換したい年月日の入力</string>
+<string name="title1">西暦 - 和暦 変換</string><string name="title2">年齢 - 誕生年 変換</string>
+<string name="meiji">明治</string>
+<string name="taisyo">大正</string>
+<string name="syouwa">昭和</string>
+<string name="heisei">平成</string>
+<string name="set">実行</string>
+<string name="nen">年</string><string name="gatu">月</string><string name="nichi">日</string>
+<string name="firstmsg">はじめにお読みください</string>
+<string name="seireki">西暦</string>
+<string name="wareki">和暦</string>
+<string name="set_title">設定</string>
+<string name="button2">年齢が知りたい</string>
+<string name="button3">誕生年が知りたい</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FAF0E6" android:gravity="top">
+
+<LinearLayout android:id="@+id/LinearLayout01" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="top|right" android:layout_height="wrap_content" android:layout_marginTop="10dp"><TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/firstmsg" android:id="@+id/firstmsg" android:layout_marginRight="10dp" android:gravity="center_vertical" android:textSize="28px"></TextView>
+<ImageButton android:background="#FAF0E6" android:id="@+id/info" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/info32" android:layout_height="wrap_content"></ImageButton>
+</LinearLayout>
+
+
+<LinearLayout android:id="@+id/LinearLayout02" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_vertical|fill_horizontal" android:weightSum="2" android:layout_marginTop="10dp"><LinearLayout android:id="@+id/LinearLayout04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center" android:layout_weight="1"><ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FAF0E6" android:id="@+id/adera" android:src="@drawable/adera225_120"></ImageButton></LinearLayout><LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center" android:layout_weight="1"><ImageButton android:layout_width="wrap_content" android:background="#FAF0E6" android:id="@+id/howold" android:layout_height="wrap_content" android:src="@drawable/howold225_120"></ImageButton>
+</LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>
